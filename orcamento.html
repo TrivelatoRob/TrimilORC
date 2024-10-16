@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Orçamento</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href=""><img src="https://cache2net3.com/Repositorio/4601/Logo/1ad0b638-8.jpg" alt="logo-trimil"></a>
+            <h1>Trimil Mecânica Industrial</h1>
+            <h2>Orçamentos</h2>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <div class="">
+                <label for="orcamento">Selecione o tipo de orçamento a ser realizado:</label>
+                <select name="orcamento" id="orcamento">
+                    <option value="venda">Venda</option>
+                    <option value="servico">Mão de Obra</option>
+                </select>
+            </div>
+            <div class="material" id="divMaterial">
+                <h3>Material:</h3>
+                <select name="perfil" id="perfil">
+                    <option value="">Selecione o perfil</option>
+                    <option value="redondo">Redondo</option>
+                    <option value="quadrado">Quadrado</option>
+                    <option value="sextavado">Sextavado</option>
+                    <option value="tubo">Tubo</option>
+                    <option value="chapa">Chapa</option>
+                </select>
+                <select name="material" id="material">
+                    <option value="">Selecione o material</option>
+                    <option value="1020">1020</option>
+                    <option value="1045">1045</option>
+                    <option value="4140">4140</option>
+                    <option value="inox">Inox</option>
+                    <option value="fundido">Fundido</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="nylon">Nylon</option>
+                    <option value="Outro"></option>
+                    <option value=""></option>
+                </select>
+                <div class=""></div>
+            </div>
+            <div>
+                <h3>Etapas:</h3>
+                <label for="serra">Serra</label>
+                <input type="checkbox" name="serra" id="serra">
+                <label for="convencional">Convencional</label>
+                <input type="checkbox" name="convencional" id="convencional">
+                <label for="cnc">Torno CNC</label>
+                <input type="checkbox" name="cnc" id="cnc">
+                <label for="fresaCnc">Centro de Usinagem</label>
+                <input type="checkbox" name="fresaCnc" id="FresaCnc">
+                <label for="vertical">Torno Vertical</label>
+                <input type="checkbox" name="vertical" id="vertical">
+                <label for="solda">Solda</label>
+                <input type="checkbox" name="solda" id="solda">
+                <label for="ajustagem">Ajustagem</label>
+                <input type="checkbox" name="ajustagem" id="ajustagem">
+            </div>
+            <div>
+                <h3>Serviços Externos:</h3>
+                <label for="zincagem">Zincagem</label>
+                <input type="checkbox" name="zincagem" id="zincagem">
+                <label for="tt">Tratamento Termico</label>
+                <input type="checkbox" name="tt" id="tt">
+                <label for="eletroerosao">Eletroerosão</label>
+                <input type="checkbox" name="eletroerosao" id="eletroerosao">
+                <label for="pintura">Pintura</label>
+                <input type="checkbox" name="pintura" id="pintura">
+            </div>
+            <div>
+                <h3>Impostos:</h3>
+                <label for="icms">ICMS</label>
+                <input type="checkbox" name="icms" id="icms">
+                <label for="ipi">IPI</label>
+                <input type="checkbox" name="ipi" id="ipi">
+                <label for="pisCofins">Pis / Cofins</label>
+                <input type="checkbox" name="pisCofins" id="pisCofins">
+                <label for="iss">ISS</label>
+                <input type="checkbox" name="iss" id="iss">
+            </div>
+            <div>
+                <button>Calcular</button>
+                <h3>Total:</h3>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
